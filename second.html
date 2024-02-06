@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let user = "sarika"
+        let pass = 123
+
+        let input = prompt("Enter Your User");
+        let password = parseInt(prompt("Enter Your Password"));
+
+        if (user === input) {
+            if (pass === password) {
+                console.log("Your login seccessfully");
+
+                let english = parseInt(prompt("Enter English Marks"));
+                let pt = parseInt(prompt("Enter PT Marks"));
+                let science = parseInt(prompt("Enter science Marks"));
+                let gujarati = parseInt(prompt("Enter gujarati Marks"));
+
+                let total = english + pt + science + gujarati;
+                console.log("Your Total = ", total);
+
+                let perce = total / 4;
+                console.log("Your Percentages = ", perce, "%");
+
+                if (perce > 90) {
+                    console.log("Grade = A+");
+                }
+                else if (perce > 80 && perce <= 90) {
+                    console.log("Grade = A");
+                }
+                else if (perce > 70 && perce <= 80) {
+                    console.log("Grade = B+");
+                }
+                else if (perce > 60 && perce <= 70) {
+                    console.log("Grade = B");
+                }
+                else if (perce > 50 && perce <= 60) {
+                    console.log("Grade = C+");
+                }
+                else if (perce > 40 && perce <= 50) {
+                    console.log("Grade = C");
+                }
+                else {
+                    console.log("Fail");
+                }
+            }
+            else {
+                console.log("Invalid Password");
+            }
+        } else {
+            console.log("Invalid Username");
+        }
+    </script>
+</body>
+
+</html>

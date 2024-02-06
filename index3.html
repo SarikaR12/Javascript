@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let input1 = parseInt(prompt("Press 1 to 6"));
+
+        console.log("Press 1 for 0-200");
+        console.log(("Press 2 for 200-400"));
+        console.log("Press 3 for 400 Above");
+        console.log("Press 4 for under");
+        console.log("press 5 for Above ");
+        console.log("Press 6 for your choice");
+
+        switch (input1) {
+            case 1:
+                for (let i = 0; i <= 200; i++) {
+                    console.log(i);
+                }
+                break;
+            case 2:
+                for (let i = 200; i <= 400; i++) {
+                    console.log(i);
+                }
+                break;
+            case 3:
+                for (let i = 400; i <= 1000; i++) {
+                    console.log(i);
+                }
+                break;
+            case 4:
+                let user = parseInt(prompt("Enter number"));
+                for (i = 0; i <= user; i++) {
+                    console.log(i);
+                }
+                break;
+            case 5:
+                let user2 = parseInt("Enter number");
+                for (i = user2; i <= 1000; i++)
+                    console.log(i);
+                break;
+
+            case 6:
+                let input2 = parseInt(prompt("Enter value"));
+                let input3 = parseInt(prompt("Enter value"));
+                for (i = input2; i = input3; i++) {
+                    console.log(i);
+                }
+                break;
+        }
+
+    </script>
+
+</body>
+
+</html>
